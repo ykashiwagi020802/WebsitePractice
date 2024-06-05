@@ -4,6 +4,7 @@ $('.cover-slick').slick({
   slidesToScroll: 3,
   dots: true,
   arrows: false,    
+
   centerPadding: '100px',
   responsive: [
     {
