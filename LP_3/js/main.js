@@ -3,7 +3,8 @@ $('.cover-slick').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   dots: true,
-  arrows: true,
+  arrows: true,    
+
   centerPadding: '100px',
   responsive: [
     {
@@ -11,6 +12,8 @@ $('.cover-slick').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode:true,        
+        centerPadding:"8.5%",
       }
     }
   ]
