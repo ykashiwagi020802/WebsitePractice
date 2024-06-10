@@ -20,7 +20,6 @@ li {
   list-style: none;
 }
 
-
 .header{
   display:flex;
   justify-content:space-between;
@@ -228,7 +227,6 @@ li {
 .mv__top__half{
   display:flex;
   justify-content:center;
-  flex-wrap:wrap;
   column-gap:18px;
 }
 
@@ -246,8 +244,8 @@ li {
 @media(min-width:1200px){
   .mv__top__half{
     display:flex;
-    justify-content:flex-start;
-    column-gap:14px; 
+    justify-content:center;
+    column-gap:35px; 
     max-width:1030px;
     margin-right:auto;
     margin-left:auto;
@@ -301,13 +299,6 @@ li {
   }
 }
 
-
-@media(min-width:1200px){
-  .mv__top__half__left{
-    margin-left:31px
-  }
-}
-
 .mv__top__half__right{
   display:flex;
   background-color:#fca4bf;
@@ -319,7 +310,7 @@ li {
   .mv__top__half__right{
     height:222px;
     width:423px;
-    margin-left:28px;
+    margin-left:9px;
     box-shadow: 0px 5px 0px 0px #e77497;
   }
 }
@@ -452,14 +443,16 @@ li {
 @media(min-width:768px) and (max-width:1200px){
   .mv__under__half{
     max-width:760px;
-    margin-left:33px;
+    margin-left:auto;
     margin-right:auto;
   }
 }
 
 @media(min-width:1200px){
   .mv__under__half{
-    margin-left:33px;
+    max-width:1030px;
+    margin-left:auto;
+    margin-right:auto;
   }
 }
 
@@ -553,7 +546,6 @@ li {
   font-size:18px;
   color:#fff;
   margin-top:12px;
-  margin-bottom:12px;
 }
 
 @media(min-width:768px){
@@ -816,7 +808,6 @@ li {
 @media(min-width:768px){
   .button--list__button .button--white--ghost{
     width:571px;
-    max-width:600px;
     height:130px;
     border-radius: 65px;
   }
@@ -894,7 +885,6 @@ li {
 @media(min-width:768px){
   .free--experience--title{
     width:575px;
-    max-width:600px;
     height:67px;
     border-top:3px solid #50bfff;
     border-bottom:3px solid #50bfff;
@@ -930,7 +920,6 @@ li {
 @media(min-width:768px){
   .free--experience--body{
     width:620px;
-    max-width:700px;
   }
 }
 
@@ -947,8 +936,7 @@ li {
 
 .free--experience--first--line--item{
   font-size:14px;
-  padding-left:0px;
-  text-align:right;
+  padding-left:21px;
 }
 
 @media(min-width:768px){
@@ -980,42 +968,14 @@ li {
   }
 }
 
-@media(min-width:768px){
-  .free--experience--second--line .free--experience--second--line--text--mini{
-    padding-top:5px;
-    margin-left:-12px;
-  }
-}
-
 .free--experience--second--line{
   display:flex;
   margin-top:0px;
 }
 
-.free--experience--first--line--item--box{
-  width:105px;
-}
-
-@media(min-width:768px){
-  .free--experience--first--line--item--box{
-    width:159px;
-  }
-}
-
-.free--experience--second--line--item--box{
-  width:105px;
-}
-
-@media(min-width:768px){
-  .free--experience--second--line--item--box{
-    width:159px;
-  }
-}
-
 .free--experience--second--line--item{
   font-size:14px;
-  padding-left:0px;
-  text-align:right;
+  padding-left:21px;
 }
 
 @media(min-width:768px){
@@ -1023,11 +983,6 @@ li {
     font-size:23px;
     padding-left:21px;
   }
-}
-
-.free--experience--second--line--text--container{
-  display:flex;
-  flex-wrap: wrap;
 }
 
 .free--experience--second--line--text{
@@ -1205,8 +1160,6 @@ li {
   font-size:14px;
   letter-spacing:-0.04rem;
   line-height:1.55;
-  padding-left:21px;
-  padding-right:20px;
 }
 
 @media(min-width:768px){
@@ -1226,8 +1179,8 @@ li {
   text-align:left;
   height:196px;
   line-height:1;
-  /* padding-left:21px;
-  padding-right:20px; */
+  padding-left:21px;
+  padding-right:20px;
   padding-top:11px;
 }
 
@@ -1240,11 +1193,9 @@ li {
   }
 }
 
-@media(max-width:767.5px){
 .point__body__under__half__body__left{
   width:100%;
   max-width:143px;
-  }
 }
 
 .point__body__under__half__body__left__container{
@@ -1265,11 +1216,9 @@ li {
   }
 }
 
-@media(max-width:767.5px){
 .point__body__under__half__body__right{
   width:100%;
   max-width:143px;
-  }
 }
 
 .point__body__under__half__body__right__container{
@@ -1357,15 +1306,6 @@ li {
   padding-left:22px;
 }
 
-@media(min-width:1200px){
-  .point--second .point__body__under__half__text{
-    letter-spacing:0;
-    padding-right:0px;
-    padding-left:0px;
-  }
-
-}
-
 .point__body__under__half__all__body__title{
   font-size:23px;
   font-weight:600;
@@ -1390,8 +1330,7 @@ li {
 @media(min-width:768px){
   .point__body__under__half__picture{
     margin-top:25px;
-    padding-left:41px;
-    padding-right:40px;
+    padding-left:81px;
   }
 }
 
@@ -1402,8 +1341,8 @@ li {
 .head{
   font-size:12px;
   position:absolute;
-  top:-1%;
-  left:44%;
+  top:-3px;
+  left:135px;
 }
 
 @media(min-width:768px){
@@ -1411,234 +1350,232 @@ li {
     font-size:16px;
     position:absolute;
     top:20px;
-    left:255px;
+    left:292px;
   }
 }
 
 .hoho{
   font-size:12px;
   position:absolute;
-  top:5%;
-  left:48%;
+  top:15px;
+  left:147px;
 }
 
 @media(min-width:768px){
   .hoho{
     font-size:16px;
     top:44px;
-    left:271px;
+    left:308px;
   }
 }
 
 .faceline{
   font-size:12px;
   position:absolute;
-  top:10%;
-  left:36%;
+  top:33px;
+  left:111px;
 }
 
 @media(min-width:768px){
   .faceline{
     font-size:16px;
     top:69px;
-    left:224px;
+    left:261px;
   }
 }
 
 .noseunder{
   font-size:12px;
   position:absolute;
-  top:15%;
-  left:46%;
+  top:51px;
+  left:141px;
 }
 
 @media(min-width:768px){
   .noseunder{
     font-size:16px;
     top:93px;
-    left:264px;
+    left:301px;
   }
 }
 
 .ago{
   font-size:12px;
   position:absolute;
-  top:20%;
-  left:46%;
+  top:70px;
+  left:141px;
 }
 
 @media(min-width:768px){
   .ago{
     font-size:16px;
     top:116px;
-    left:263px;
+    left:300px;
   }
 }
 
 .waki{
   font-size:12px;
   position:absolute;
-  top:30%;
-  left:46%;
+  top:105px;
+  left:141px;
 }
 
 @media(min-width:768px){
   .waki{
     font-size:16px;
     top:161px;
-    left:265px;
+    left:302px;
   }
 }
 
 .hesomawari{
   font-size:12px;
   position:absolute;
-  top:35%;
-  left:42%;
+  top:123px;
+  left:129px;
 }
 
 @media(min-width:768px){
   .hesomawari{
     font-size:16px;
     top:184px;
-    left:249px;
+    left:286px;
   }
 }
 
 .teyubiko{
   font-size:12px;
   position:absolute;
-  top:40%;
-  left:44%;
+  top:141px;
+  left:135px;
 }
 
 @media(min-width:768px){
   .teyubiko{
   font-size:16px;
   top:274px;
-  left:275px;
+  left:312px;
   }
 }
 
 .vline{
   font-size:12px;
   position:absolute;
-  top:61%;
-  left:43%;
+  top:213px;
+  left:132px;
 }
 
 @media(min-width:768px){
   .vline{
     font-size:16px;
     top:355px;
-    left:237px;
+    left:274px;
   }
 }
 
 .iline{
   font-size:12px;
   position:absolute;
-  top:66%;
-  left:43%;
+  top:233px;
+  left:133px;
 }
 
 @media(min-width:768px){
   .iline{
     font-size:16px;
     top:378px;
-    left:241px;
+    left:278px;
   }
 }
 
 .hiza{
   font-size:12px;
   position:absolute;
-  top:77%;
-  left:46%;
+  top:268px;
+  left:141px;
 }
 
 @media(min-width:768px){
   .hiza{
     font-size:16px;
     top:403px;
-    left:249px;
+    left:289px;
   }
 }
-
-
 
 .ashiyubiko{
   font-size:12px;
   position:absolute;
-  top:82%;
-  left:44%;
+  top:285px;
+  left:135px;
 }
 
 @media(min-width:768px){
   .ashiyubiko{
     font-size:16px;
     top:564px;
-    left:221px;
+    left:258px;
   }
 }
 
 .unaji{
   font-size:12px;
   position:absolute;
-  top:12%;
-  right:2%;
+  top:40px;
+  left:267px;
 }
 
 @media(min-width:768px){
   .unaji{
     font-size:16px;
     top:77px;
-    left:483px;
+    left:520px;
   }
 }
 
 .back{
   font-size:12px;
   position:absolute;
-  top:25%;
-  right:1%;
+  top:87px;
+  left:281px;
 }
 
 @media(min-width:768px){
   .back{
     font-size:16px;
     top:151px;
-    left:530px;
+    left:567px;
   }
 }
 
 .hip{
   font-size:12px;
   position:absolute;
-  top:60%;
-  right:1%;
+  top:209px;
+  left:271px;
 } 
 
 @media(min-width:768px){
   .hip{
     font-size:16px;
     top:242px;
-    left:550px;
+    left:587px;
   } 
 }
 
 .oline{
   font-size:12px;
   position:absolute;
-  top:65%;
-  right:0%;
+  top:227px;
+  left:264px;
 }
 
 @media(min-width:768px){
   .oline{
     font-size:16px;
     top:266px;
-    left:544px;
+    left:581px;
   }
 }
 
@@ -1652,7 +1589,7 @@ li {
 @media(min-width:768px){
   .point__body__under__half__part__body__title{
     font-size:24px;
-    padding-top:55px;
+    padding-top:58px;
   }
 }
 
@@ -1781,7 +1718,6 @@ li {
   letter-spacing:0;
 }
 
-
 .point--third  .point__body__under__half__container{
   padding-left:20px;
   height:75px;
@@ -1789,7 +1725,7 @@ li {
 
 @media(min-width:768px){
   .point--third  .point__body__under__half__container{
-    padding-left:20px;
+    padding-left:42px;
     padding-top:25px;
     height:87px;
   }
@@ -2037,7 +1973,6 @@ li {
   display:flex;
   justify-content: center;
   margin-top:-14px;
-  overflow-x: hidden;
 }
 
 @media(min-width:768px){
