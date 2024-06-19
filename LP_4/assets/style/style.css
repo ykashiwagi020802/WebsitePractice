@@ -1225,6 +1225,8 @@ li {
   height: 0.625rem;
   padding: 0;
   border: 0.0625rem solid #fff;
+  color:#000;
+  background-color:#000;
   border-radius: 50%;
 }
 
@@ -1233,7 +1235,8 @@ li {
   height: 0.625rem;
   line-height: normal;
   border-radius: 50%;
-  opacity: 0;
+  background-color:#fff;
+  /* opacity: 0; */
 }
 
 .slick-dots li button:hover::before,
