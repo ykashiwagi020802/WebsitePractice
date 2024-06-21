@@ -13,9 +13,9 @@ $(window).on('resize', function () {
   hamburger.removeClass('hamburger-menu-active');
 });
 
-$('.gallary__photo--slick').slick({ 
+$('.gallary__photo__slick').slick({ 
   infinite: true,
   slidesToShow: 1,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   dots: true,
 });
