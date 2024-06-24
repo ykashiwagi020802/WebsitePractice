@@ -10,7 +10,7 @@
   <meta property="og:description" content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
   <meta property="og:site_name" content="Kirameki Farm">
   <meta property="og:image" content="/">
-  <meta property="og:url" content="/">
+  <meta property="og:url" content="https://example.com/faq/">
   <meta property="og:title" content="持続可能な未来農業を実現：Kirameki Farm">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,19 +33,24 @@
 
 <body>
   <header class="header">
-    <h1 class="header__logo"><img src="../assets/image/header_sp_01.png" alt="Kira-meki Farm"></h1>
+    <h1 class="header__logo"><a>
+      <picture>
+        <source media="(max-width:767px)" srcset="../assets/image/header_sp_01.png">
+        <source media="(min-width:768px)" srcset="../assets/image/header_logo_pc_01.png">
+        <img src="../assets/image/header_sp_01.png" alt="">
+      </picture></a></h1>
     <button type="button" class="hamburger-button">
       <i class="bi bi-list"></i>
     </button>
     <nav class="hamburger-menu header__nav">
       <ul class="hamburger-menu__list header-nav__list flex outfit">
-        <li><a class="js-scroll" href="price">価格・スペック</a></li>
-        <li><a class="js-scroll" href="faq">よくあるご質問</a></li>
+        <li><a class="js-scroll" href="../price">価格・スペック</a></li>
+        <li><a class="js-scroll" href="../faq">よくあるご質問</a></li>
       </ul>
       <ul class="header__button">
         <li class="header__button__list"><a href="#">トップ</a></li>
-        <li class="header__button__list"><a href="price">価格・スペック</a></li>
-        <li class="header__button__list"><a href="faq">よくあるご質問</a></li>
+        <li class="header__button__list"><a href="../price">価格・スペック</a></li>
+        <li class="header__button__list"><a href="../faq">よくあるご質問</a></li>
       </ul>
     </nav>
 
@@ -106,7 +111,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               農業用ドローンは、作物の健康状態のモニタリング、除草剤・肥料等の散布、灌漑システムの管理な<span>ど</span>、農業生産の効率を向上させるために使用されます。
             </div>
           </li>
@@ -133,7 +138,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               農業用ドローンの導入により、労働力を削減し作業効率を向上させることができま<span>す</span>。また、病害虫の早期発見や適切な散布が可能となり、生産性や質を向上させることができます。
             </div>
           </li>
@@ -161,7 +166,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               フィックスウィング（固定翼）ドローン、ロータリーウィング（回転翼）ドローン、および、マルチコプター（複数のプロペラを持つ）ドロ―ンがあります。
             </div>
           </li>
@@ -189,7 +194,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               ドローンの種類、性能、機能によって価格は異なりますが、一般的には数万円から数百万円の範囲で販売されています。
             </div>
           </li>
@@ -214,7 +219,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               農業用ドローンの操縦には、国によって異なるが、無人航空機操縦士免許やドローン操縦資格が必要とされる場合があります。
             </div>
           </li>
@@ -239,7 +244,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               国や地域によって異なりますが、一般的には飛行高度、飛行速度、操縦者とドローンの距離、人口密集地や空港周辺の飛行に関する制限が設けられています。
             </div>
           </li>
@@ -264,7 +269,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               ドローンの種類やバッテリー容量によって異なりますが、一般的には約20分か<span>ら</span>60分の飛行時間があります。
             </div>
           </li>
@@ -292,7 +297,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               農業用ドローンには、散布量を制御するためのシステムが搭載されており、必要な量を正確に散布できます。
             </div>
           </li>
@@ -317,7 +322,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               農業用ドローンのデータ収集や解析には、専用のソフトウェアが使用されます。これにより、作物の健康状態や生育状況を詳細に分析することができます。
             </div>
           </li>
@@ -345,7 +350,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               雨や強風の条件下では飛行が困難だったり安全上の問題が発生することがあります。ドローンの性能や設計によって対応できる気象条件は異なります。
             </div>
           </li>
@@ -373,7 +378,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq__under">
+            <div class="faq__under accordion_inner">
               ドローンの定期点検や部品の交換、ソフトウェアのアップデートなどが必要となります。メンテナンスは専門業者やメーカーに依頼することもできます。
             </div>
           </li>
@@ -385,11 +390,11 @@
   <footer class="footer">
     <div class="footer__container">
       <ul class="footer__body">
-        <li class="footer__left">価格・スペック
+        <li class="footer__left"><a href="../price">価格・スペック</a>
         </li>
         <li class="footer__center">|
         </li>
-        <li class="footer__right">よくあるご質問
+        <li class="footer__right"><a href="../faq">よくあるご質問</a>
         </li>
       </ul>
       <div class="footer__value-version">
@@ -402,7 +407,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
   <!-- slickを読み込む -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

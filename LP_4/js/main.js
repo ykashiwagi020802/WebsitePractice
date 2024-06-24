@@ -13,9 +13,16 @@ $(window).on('resize', function () {
   hamburger.removeClass('hamburger-menu-active');
 });
 
-$('.gallary__photo__slick').slick({ 
+$('.gallary__photo__slick').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
+});
+
+$(function () {
+  $('.faq__above').click(function () {
+    $(this).next('.faq__under').slideToggle();
+    $(this).toggleClass("open");
+  });
 });
