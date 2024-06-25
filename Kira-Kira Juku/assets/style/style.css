@@ -196,6 +196,8 @@ li {
   @media(min-width:768px){
     .button--white--ghost{
     height:73px;
+    margin-left:unset;
+    margin-right:unset;
     }
   }
   .button--white--ghost--light--green{
@@ -1121,7 +1123,8 @@ color:#46c017;
     .under--contact--button{
       margin-top:26px;
       display:flex;
-      column-gap:10px;
+      justify-content: center;
+      column-gap:36px;
     }
   }
   
@@ -1133,7 +1136,7 @@ color:#46c017;
     width:81%;
     letter-spacing:0;
     max-width:360px;
-    margin-bottom:5px;
+    margin-bottom:12px;
   }
   
   @media(min-width:768px){
