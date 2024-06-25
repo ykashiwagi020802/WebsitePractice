@@ -21,6 +21,12 @@ li {
   list-style: none;
 }
 
+@media(min-width:768px){
+  .top{
+    position:relative
+  }
+}
+
 .top__title__class{
   background-image: url('../image/top_sp_01.png'); 
   background-size: cover;
@@ -82,13 +88,15 @@ li {
 
 @media(min-width:768px) and (max-width:1200px){
   .top__body__text{
-    margin-top:-200px;
+    position:absolute;
+    bottom:20px;
   }
 }
 
 @media(min-width:1200px){
   .top__body__text{
-    margin-top:-442px;
+    position:absolute;
+    bottom:269px;
   }
 }
 
@@ -141,7 +149,7 @@ li {
   .top__title__body__text{
     font-size:25px;
     margin-left:223px;
-    letter-spacing:0.52rem;
+    letter-spacing:0.48rem;
     margin-top:14px;
   }
 }
@@ -221,7 +229,7 @@ li {
     margin-right:auto;
     max-width:1000px;
     padding-left:0px;
-    margin-top:318px;
+    margin-top:50px;
   }
 }
 
@@ -704,6 +712,7 @@ li {
   }
 }
 
+
 .question-container{
   padding-top:26px;
   margin-bottom:49px;
@@ -713,7 +722,7 @@ li {
 @media(min-width:768px){
   .question-container{
     padding-top:39px;
-    margin-bottom:54px;
+    margin-bottom:52px;
   }
 }
 
@@ -770,7 +779,7 @@ li {
   margin-left:16px;
   margin-right:16px;
   margin-top:6px;
-  max-width:600px;
+  
   position:relative;
   background-color:#DBF7F9;
 }
@@ -780,6 +789,7 @@ li {
     margin-left:auto;
     margin-right:auto;
     margin-top:37px;
+    max-width:600px;
   }
 }
 
@@ -907,7 +917,6 @@ li {
   margin-top:0px;
   padding-top:0px;
   flex-shrink:0;
-
 }
 
 @media(min-width:768px){
@@ -1124,7 +1133,6 @@ li {
     margin-top:20px;
     padding-bottom:39px;
   }
-
 }
 
 .Q-and-A-fifth .Q-and-A-first-half-container{
@@ -1237,6 +1245,7 @@ li {
       column-gap:40px;
     }
   }
+  
   @media(min-width:1200px){
     .footer__body{
     display:flex;

@@ -1113,11 +1113,15 @@ color:#46c017;
 
   .under--contact--button{
     margin-top:10px;
+    display:block;
+    row-gap:10px;
   }
   
   @media (min-width: 768px){
     .under--contact--button{
       margin-top:26px;
+      display:flex;
+      column-gap:10px;
     }
   }
   
@@ -1129,6 +1133,7 @@ color:#46c017;
     width:81%;
     letter-spacing:0;
     max-width:360px;
+    margin-bottom:5px;
   }
   
   @media(min-width:768px){

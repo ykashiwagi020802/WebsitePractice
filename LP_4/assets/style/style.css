@@ -1782,6 +1782,7 @@ display:inline-block;
 .value__text{
   display:flex;
   line-height:1;
+  color:#168352;
 }
 
 .value__yen{
@@ -2427,13 +2428,11 @@ display:inline-block;
 
 .faq__eleventh{
   margin-top:25px;
-  margin-bottom:170px;
 }
 
 @media(min-width:768px){
   .faq__eleventh{
     margin-top:26px;
-    margin-bottom:75px;
   }
 }
 
@@ -2441,3 +2440,18 @@ display:inline-block;
   padding-top:12px;
 }
 
+.faq__twelveth{
+  margin-top:25px;
+  margin-bottom:170px;
+}
+
+@media(min-width:768px){
+  .faq__twelveth{
+    margin-top:26px;
+    margin-bottom:75px;
+  }
+}
+
+.faq__twelveth  .faq__under{
+  padding-top:12px;
+}
