@@ -236,3 +236,155 @@ li {
   margin-right:auto;
   margin-left:auto;
 }
+
+.footer-list-first{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer-list-first ul{
+  margin-top:32px;
+  display:flex;
+}
+
+.footer-list-first li{
+  width:270px;
+}
+
+.footer-list-first h2{
+  font-size:18px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+}
+
+.footer-li-second{
+  margin-left:12px;
+}
+
+.footer-list-square{
+  padding-left:16px;
+}
+
+.footer-li-fourth .footer-list-square{
+  padding-left:21px;
+}
+
+.footer-li-fourth .footer-list-square-second{
+  padding-left:18px;
+}
+
+
+.footer-li-fourth .list-line-fourth{
+  margin-top:25px;
+}
+
+.footer-li-fourth .list-line-fifth{
+  margin-top:9px;
+}
+
+.footer-list-first p{
+  font-size:18px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+  padding-left:17px;
+}
+
+.footer-list-mark{
+  font-size:12px;
+  padding-left:5px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+  padding-top:4px;
+}
+
+.footer-list-letter{
+  padding-left:5px;
+}
+
+.list-line-second{
+  display:flex;
+  margin-top:16px;
+}
+
+.list-line-third{
+  display:flex;
+  margin-top:9px;
+}
+
+.list-line-fourth{
+  display:flex;
+  margin-top:8px;
+}
+
+.footer-list-second{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer-list-second ul{
+  margin-top:55px;
+  display:flex;
+}
+
+.footer-list-second li{
+  width:270px;
+}
+
+.footer-list-second h2{
+  font-size:18px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+}
+
+
+.footer-list-second p{
+  font-size:18px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+  padding-left:17px;
+}
+
+.footer-list-second .footer-li-second{
+  margin-left:10px;
+}
+
+.footer-copyright{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:center;
+  margin-top:60px;
+  padding-bottom:36px;
+}
+
+.footer-copyright p{
+  font-size:15px;
+  font-family:Noto Sans CJK JP;
+  font-weight:400;
+  color:#fff;
+
+}
+
+.copy-first-span{
+  padding-left:4px;
+}
+
+.copy-second-span{
+  padding-left:4px;
+}
+
+.copy-third-span{
+  padding-left:4px;
+}
+
+.copy-fourth-span{
+  padding-left:4px;
+}

@@ -75,20 +75,74 @@ $(function () {
 
 });
 
+// $(function () {
+//   $(window).scroll(function () {
+//     $('.fadein').each(function () {
+//       var position = $(this).offset().top;
+//       var scroll = $(window).scrollTop();
+//       var windowHeight = $(window).height();
+//       if (scroll > position - windowHeight + 200) {
+//         $(function () {
+//           $('.fadein').each(function (i) {
+//             $(this).delay(i * 200).queue(function () {
+//               $(this).addClass('active');
+//             });
+//           });
+//         });
+//       }
+//     });
+//   });
+// });
+
+// スクロールフェードイン
 $(function () {
   $(window).scroll(function () {
-    $('.fadein').each(function () {
-      var position = $(this).offset().top;
+    $('.js-fade').each(function () {
+      var pos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > position - windowHeight + 200) {
-        $(function () {
-          $('.fadein').each(function (i) {
-            $(this).delay(i * 200).queue(function () {
-              $(this).addClass('active');
-            });
-          });
-        });
+      if (scroll > pos - windowHeight) {
+        $(this).addClass('scrolled');
+      }
+    });
+  });
+});
+
+$(function () {
+  // ウィンドウをスクロールしたら…
+  $(window).scroll(function () {
+    // ウィンドウの高さを取得
+    const wHeight = $(window).height();
+    // スクロールした量を取得
+    const wScroll = $(window).scrollTop();
+    // それぞれのblockクラスに対して…
+    $(".service-fadeIn").each(function () {
+      // それぞれのblockクラスのウィンドウからの高さを取得
+      const bPosition = $(this).offset().top;
+      // スクロールした量が要素の高さを上回ったら
+      // その数値にウィンドウの高さを引き、最後に200pxを足す
+      if (wScroll > bPosition - wHeight + 200) {
+        $(this).addClass("fadeIn-service-active");
+      }
+    });
+  });
+});
+
+$(function () {
+  // ウィンドウをスクロールしたら…
+  $(window).scroll(function () {
+    // ウィンドウの高さを取得
+    const wHeight = $(window).height();
+    // スクロールした量を取得
+    const wScroll = $(window).scrollTop();
+    // それぞれのblockクラスに対して…
+    $(".develope-fadeIn").each(function () {
+      // それぞれのblockクラスのウィンドウからの高さを取得
+      const bPosition = $(this).offset().top;
+      // スクロールした量が要素の高さを上回ったら
+      // その数値にウィンドウの高さを引き、最後に200pxを足す
+      if (wScroll > bPosition - wHeight + 200) {
+        $(this).addClass("fadeIn-develope-active");
       }
     });
   });

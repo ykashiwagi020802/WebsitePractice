@@ -154,26 +154,67 @@ li {
 
 .business-first{
   margin-top:0;
-  background-image: url('../image/business_01.png');
-  background-size: cover;
-  aspect-ratio:340/450;
   width:340px;
+  height:450px;
+  position:relative;
 }
+
+.business-first-photo {
+  position:absolute;
+  width:340px;
+  height:450px;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.business-first-photo:hover{
+  height: 120%;
+  filter: blur(10px);
+}
+
 
 .business-second{
   margin-top:0;
-  background-image: url('../image/business_02.png');
-  background-size: cover;
-  aspect-ratio:340/450;
   width:340px;
+  height:450px;
+  position:relative;
 }
+
+.business-second-photo {
+  position:absolute;
+  width:340px;
+  height:450px;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.business-second-photo:hover{
+  height: 120%;
+  filter: blur(10px);
+}
+
 
 .business-third{
   margin-top:0;
-  background-image: url('../image/business_03.png');
-  background-size: cover;
-  aspect-ratio:340/450;
   width:340px;
+  height:450px;
+  position:relative;
+}
+
+.business-third-photo {
+  position:absolute;
+  width:340px;
+  height:450px;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.business-third-photo:hover{
+  height: 120%;
+  filter: blur(10px);
 }
 
 .business-first-title{
@@ -295,21 +336,6 @@ li {
   font-weight:600;
 }
 
-.business-first:hover{
-  transform:scale(1.2,1.2);
-  transition:1s all;
-}
-
-.business-second:hover{
-  transform:scale(1.2,1.2);
-  transition:1s all;
-}
-
-
-.business-third:hover{
-  transform:scale(1.2,1.2);
-  transition:1s all;
-}
 
 
 div.animation_box {
@@ -392,6 +418,33 @@ div.animation_box_second {
   left:calc(50% - 540px);
 }
 
+/* .fadeIn-first{
+  animation-name:fadeInAnime;
+  animation-duration:5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+} */
+
+.service-photo {
+  opacity: 0; /* 最初は非表示にしておく */
+  transition: all 2s; /* 動きを滑らかに */
+}
+/* フェードイン用のクラス */
+.fadeIn-service-active {
+  opacity: 1;
+}
+
+
 .service-line{
   border-bottom:solid 1px #E4007F;
   top:120px;
@@ -460,6 +513,15 @@ div.animation_box_third {
 
 .develope-photo{
   margin-top:134px;
+}
+
+.develope-photo {
+  opacity: 0; /* 最初は非表示にしておく */
+  transition: all 2s; /* 動きを滑らかに */
+}
+/* フェードイン用のクラス */
+.fadeIn-develope-active {
+  opacity: 1;
 }
 
 .develope-line-left{
@@ -575,4 +637,29 @@ div.animation_box_third {
 .information-text-fifth{
   padding-top:20px;
   padding-left:5px;
+}
+
+/* フェードしたい要素に付与するクラス */
+.js-fade {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+/* 時間差フェードで付与するクラス */
+.fadeDelay1 {
+  transition-delay: .5s;
+}
+.fadeDelay2 {
+  transition-delay: 1s;
+}
+
+.fadeDelay3 {
+  transition-delay: 1s;
+}
+
+/* フェードしたい要素に付与するクラス */
+.scrolled {
+  opacity: 1;
+  transform: translateY(0px);
 }
